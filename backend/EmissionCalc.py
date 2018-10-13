@@ -1,5 +1,5 @@
-def calculateCarbonFootprint(mpg, dist):
-    emission = dist / mpg * 20
-    print emission
+def calculateFootprint(mpg, dist):
+    emission = float(float(dist) / float(mpg) * 20.0)
+    print(emission)
 
-calculateCarbonFootprint (10, 12)
+calculateFootprint(10,12)
