@@ -1,6 +1,7 @@
 import json
 import urllib
 import urllib2
+import urllib3
 import time
 
 def getDistance(startLoc, endLoc):
@@ -12,7 +13,8 @@ def getDistance(startLoc, endLoc):
 
     maps_key = 'AIzaSyBaDoxmA0conei-WUGZHS6moh7o_YphxCQ'
     base_url = 'https://maps.googleapis.com/maps/api/distancematrix/json'
-
+    startLoc.replace(" ", "+")
+    endLoc.replace(" ", "+")
     url = base_url + '?' + urllib.urlencode({
         'units' : 'imperial',
         'origins': startLoc,
@@ -41,4 +43,4 @@ def getDistance(startLoc, endLoc):
         time.sleep(current_delay)
         current_delay *= 2
 
-print(getDistance('UC+San+Diego', 'Vallartas+San+Diego'))
+print(getDistance('UC San Diego', 'Vallartas San Diego'))
