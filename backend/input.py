@@ -28,8 +28,8 @@ def sendPage(emission, in_month, in_year):
     <html>
       <body>
         <h1>Your carbon emissions for this trip total to {0} pounds of CO2</h1>
-        <h1>If you travelled to this place {1} times in a month, you would </h1>
-        <h1></h1>
+        <h1>If you travelled to this place {1} times in a month, you would hit the average monthly CO2 emissions per person in the United States.</h1>
+        <h1>If you travelled to this place {2} times in a year, you would the average annual CO2 emissions per person in the United States.</h1>
       </body>
     </html>
     '''.format(emission, in_month, in_year)
