@@ -23,16 +23,16 @@ def sendForm():
     </html>
     '''
 
-def sendPage(emission):
+def sendPage(emission, in_month, in_year):
     print '''
     <html>
       <body>
         <h1>Your carbon emissions for this trip total to {0} pounds of CO2</h1>
-        <h1></h1>
+        <h1>If you travelled to this place {1} times in a month, you would </h1>
         <h1></h1>
       </body>
     </html>
-    '''.format(emission)
+    '''.format(emission, in_month, in_year)
 
 if not qs:
     sendHeaders()
@@ -43,4 +43,7 @@ else:
     else:
         mpg = 'No Name Provided'
     sendHeaders()
-    sendPage(mpg)
+    emission = emission_calc.calcFootprint(mpg, mpg)
+    in_year = emission_calc.numTravelsInYear(emission)
+    in_month = emission_calc.numTravelsInMonth(emission)
+    sendPage(emission, in_month, in_year)
