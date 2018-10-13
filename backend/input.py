@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import emission_calc
+import distance
 
 headers = ["Content-type: text/html"]
 qs = os.environ['QUERY_STRING']
@@ -43,7 +44,8 @@ else:
     else:
         mpg = 'No Name Provided'
     sendHeaders()
-    emission = emission_calc.calcFootprint(mpg, mpg)
+    dist = distance.getDistance("UC San Diego", "Vallarta San Diego")
+    emission = emission_calc.calcFootprint(mpg, dist)
     in_year = emission_calc.numTravelsInYear(emission)
     in_month = emission_calc.numTravelsInMonth(emission)
     sendPage(emission, in_month, in_year)
