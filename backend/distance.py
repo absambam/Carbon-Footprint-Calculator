@@ -14,6 +14,7 @@ def getDistance(startLoc, endLoc):
     base_url = 'https://maps.googleapis.com/maps/api/distancematrix/json'
 
     url = base_url + '?' + urllib.urlencode({
+        'units' : 'imperial',
         'origins': startLoc,
         'destinations': endLoc,
         'key': maps_key,
@@ -30,7 +31,7 @@ def getDistance(startLoc, endLoc):
         else:
             result = json.loads(response.replace('\\n', ''))
             if result['status']  == 'OK':
-                return ['rows']['elements']['distance']['text']
+                return result['rows'][0]['elements'][0]['distance']['text']
             elif result['status'] != 'UNKNOWN_ERROR':
                 raise Exception(result['error_message'])
 
