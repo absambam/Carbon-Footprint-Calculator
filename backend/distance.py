@@ -2,6 +2,7 @@ import json
 import urllib
 import urllib2
 import time
+import extract_number
 
 def getDistance(startLoc, endLoc):
 
@@ -38,8 +39,9 @@ def getDistance(startLoc, endLoc):
             result = json.loads(response.replace('\\n', ''))
             if result['status']  == 'OK':
                 # Get distance value
-                dis = extractNumber(result['rows'][0]['elements'][0]['distance']['text'])
-                return dis
+                # dist = extract_number.extract_number(result['rows'][0]['elements'][0]['distance']['text'])
+                dist = result['rows'][0]['elements'][0]['distance']['text']
+                return dist
             elif result['status'] != 'UNKNOWN_ERROR':
                 # Error cannot be fixed by retrying
                 raise Exception(result['error_message'])

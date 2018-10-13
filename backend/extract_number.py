@@ -1,5 +1,5 @@
 
-def extractNumber(s):
+def extract_number(s):
     tmp = s.split(" ")
     try:
         number = tmp[0].float()
