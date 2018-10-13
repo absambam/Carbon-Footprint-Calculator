@@ -1,4 +1,4 @@
-def calculateFootprint(mpg, dist):
+def calcFootprint(mpg, dist):
     # calculate the carbon emissions released while traveling the given
     # distance
     emission = "%.1f" % float(float(dist) / float(mpg) * 20.0)
