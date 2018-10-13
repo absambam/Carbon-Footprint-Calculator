@@ -1,7 +1,6 @@
 import json
 import urllib
 import urllib2
-import urllib3
 import time
 
 def getDistance(startLoc, endLoc):
