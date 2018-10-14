@@ -1,8 +1,9 @@
-
 def extract_number(s):
     tmp = s.split(" ")
+    print(tmp)
     try:
-        number = tmp[0].float()
+        number = float(tmp[0])
+        print(number)
     except:
         exit()
     return number

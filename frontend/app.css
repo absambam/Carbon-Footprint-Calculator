@@ -1,14 +1,25 @@
+* {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+  //background-image: linear-gradient(to bottom right, #B4D836, #73B349);
 }
 
 .ribbon {
-  background-color: green;
+  background-color: black;
+  height: fit-content;
   width: 100%;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
 }
 
 .ribbon h1 {
-  text-align:center;
+  text-align: center;
+  margin: 0;
+  color: white;
 }
