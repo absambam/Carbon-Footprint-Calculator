@@ -40,8 +40,10 @@ h1 {
 }
 
 img {
-    height: 200px;
-    width: 200px;
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .calculation {
@@ -51,6 +53,7 @@ img {
 
 .value {
   display: block;
+  font-size: 100px;
 
 }
 
