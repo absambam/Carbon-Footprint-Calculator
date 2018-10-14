@@ -1,7 +1,7 @@
 * {
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
-  color: black;
+  color: #044C0C;
 }
 
 html, body {
@@ -36,6 +36,8 @@ img {
 .rounded {
   display: block;
   border-radius: 100px;
+  border: 2px solid #044C0C;
+  border-color: #044C0C;
   background-color: white;
   margin: 0 auto;
   margin-top: 75px;
@@ -47,6 +49,12 @@ img {
   margin: 0 auto;
   display: block;
   text-align: center;
+  text-color: #044C0C;
   vertical-align: middle;
   text-decoration: none;
+}
+
+.rounded:hover {
+  background-color: rgba(255,255,255,0.3);
+  cursor: pointer;
 }
