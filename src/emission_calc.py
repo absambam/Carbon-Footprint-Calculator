@@ -7,19 +7,19 @@ def calcFootprint(mpg, dist):
 def numTravelsInYear(emission):
     # the number of travels to given place one would complete in a year to get
     # the average per-capita carbon emissions in the U.S.
-    travels = int(16.491 * 2204.62 / int(emission))
+    travels = int(16.491 * 2204.62 / int(float(emission)))
     return travels
 
 def numTravelsInMonth(emission):
     # the number of travels to given place one would complete in a month to get
     # the average per-capita carbon emissions in the U.S.
-    travels = int(1.374 * 2204.62 / int(emission))
+    travels = int(1.374 * 2204.62 / int(float(emission)))
     return travels
 
 def numPerHomePerYear(emission):
-    houses = int((9.26*2205) / int(emission))
+    houses = int((9.26*2205) / int(float(emission)))
     return houses
 
 def numTrees(emission):
-    trees = int(int(emission) / 0.039 * 2205)
+    trees = int(int(float(emission)) / 0.039 * 2205)
     return trees

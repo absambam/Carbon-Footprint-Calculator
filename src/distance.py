@@ -39,6 +39,7 @@ def getDistance(startLoc, endLoc):
             result = json.loads(response.replace('\\n', ''))
             if result['status']  == 'OK':
                 # Get distance value
+                print(result['rows'][0]['elements'])
                 dist = extract_number.extract_number(result['rows'][0]['elements'][0]['distance']['text'])
                 # dist = result['rows'][0]['elements'][0]['distance']['text']
                 return dist
