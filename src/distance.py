@@ -18,6 +18,10 @@ def getDistance(startLoc, endLoc):
 
     info = [startLoc, endLoc, 0]
 
+    if (startLoc == endLoc):
+        info[2] = -1
+        return info
+
     url = base_url + '?' + urllib.urlencode({
         'units' : 'imperial',
         'origins': startLoc,
@@ -52,13 +56,13 @@ def getDistance(startLoc, endLoc):
                 # Error cannot be fixed by retrying
                 raise Exception(result['error_message'])
                 info[2] = -1
-                return info[2]
+                return info
 
         # Check if current retry delay has exceeded max retry delay
         if current_delay > max_delay:
             raise Exception('Too many retry attempts. :(')
             info[2] = -1
-            return info[2]
+            return info
         print('Waiting', current_delay, 'seconds before retrying...')
         time.sleep(current_delay)
         current_delay *= 2 # Increase delay each time we need to retry
