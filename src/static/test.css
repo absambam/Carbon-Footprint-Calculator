@@ -28,7 +28,7 @@ h1 {
 #emissions {
   height: calc(100% - 1.3rem);
   background-color: mediumseagreen;
-  font-size: 5rem;
+  font-size: 6rem;
   padding-top: 5%;
   overflow: auto;
 }
@@ -38,7 +38,7 @@ h1 {
 }
 
 #small-description {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 img {
