@@ -77,3 +77,8 @@ img {
   text-align: center;
   padding: 5px;
 }
+
+.return {
+  text-align: center;
+  display: inline;
+}
