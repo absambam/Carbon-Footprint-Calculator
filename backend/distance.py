@@ -2,7 +2,7 @@ import json
 import urllib
 import urllib2
 import time
-from backend import extract_number
+import extract_number
 
 def getDistance(startLoc, endLoc):
 
