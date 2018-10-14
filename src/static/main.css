@@ -1,3 +1,10 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  color: black;
+  margin-top: 100px;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -7,18 +14,21 @@ html, body {
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 80px;
   color: white;
-  margin-top: 100px;
-  background-color: none;
 }
+
 
 .logo {
   width: 25%;
   height: 25%;
   margin: 0 auto;
   margin-top: 50px;
+}
 
+.rounded {
+  border-radius: 25px;
+  background-color: white;
 
+  width: 200px;
+  height: 60px;
 }
