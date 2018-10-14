@@ -18,6 +18,15 @@ h1 {
   margin-top: 100px;
 }
 
+h2 {
+  color: black;
+}
+
+h3 {
+  color: black;
+  font-size: 30px;
+}
+
 img {
   display: block;
   width: 25%;
@@ -67,11 +76,3 @@ img {
   margin-top: 100px;
 }
 
-h2 {
-  color: black;
-}
-
-h3 {
-  color: black;
-  font-size: 30px;
-}
