@@ -6,7 +6,7 @@ Enter your starting location and destination (e.g. *UC San Diego* and *Vallartas
 
 
 Gif created with [Recordit](http://recordit.co/) <br />
-<img src="http://recordit.co/4FLuMH8LGr" width=200><br>
+<img src="https://s3.amazonaws.com/img0.recordit.co/4FLuMH8LGr.mp4?AWSAccessKeyId=AKIAINSRFOQXTN4DT46A&Expires=1539549370&Signature=Wr5VYIs8VuH0LO5K6LpwRMdjSCg%3D" width=200><br>
 
 
 ## References
