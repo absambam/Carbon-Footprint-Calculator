@@ -26,7 +26,7 @@ h1 {
 }
 
 #emissions {
-  height: calc(100% - 1.3rem);
+  height: calc(100% - 3rem);
   background-color: mediumseagreen;
   font-size: 6rem;
   padding-top: 5%;
