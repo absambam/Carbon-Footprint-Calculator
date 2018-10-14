@@ -5,26 +5,39 @@
     <link rel="stylesheet" href="../static/test.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#scrolldown').click(function() {
+          $('html, body').animate({
+            scrollTop: $("#analysis").offset().top
+          }, 800, function() {
+          });
+        });
+      });
+</script>
   </head>
 
   <body>
-    <!-- {{ data }} -->
     <div class="ribbon">
-      <h1>Carbon Footprint Calculator</h1>
+      <h1><a href="app.html">Carbon Footprint Calculator</a></h1>
     </div>
     <div id="emissions">
       <div id="info-wrapper">
         <span class="parenthesis">[</span> {{data[0]}}  <span class="parenthesis">]</span>
         <div id="small-description">tons of CO2 emissions</div>
-        <a class="btn btn-xs" id="donate" href= "#">Scroll down or click here for more info</a>
+        <a href={{url}}> Directions </a>
+        <a class="btn btn-xs" id="scrolldown" href= "#analysis">Scroll down or click here for more info</a>
       </div>
     </div>
 
-    <div class="row">
+    <div id="analysis" class="row">
       <div class="col-md-4 calculation">
         <img src="../static/images/house.svg"/>
         <div class="value">{{data[1]}}</div>
