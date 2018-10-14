@@ -15,3 +15,11 @@ def numTravelsInMonth(emission):
     # the average per-capita carbon emissions in the U.S.
     travels = int(1.374 * 2204.62 / int(emission))
     return travels
+
+def numPerHomePerYear(emission):
+    houses = int((9.26*2205) / int(emission))
+    return houses
+
+def numTrees(emission):
+    trees = int(int(emission) / 0.039 * 2205)
+    return trees
