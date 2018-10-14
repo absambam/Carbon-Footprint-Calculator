@@ -9,6 +9,10 @@ Gif created with [Recordit](http://recordit.co/) <br />
 <img src="https://s3.amazonaws.com/img0.recordit.co/4FLuMH8LGr.mp4?AWSAccessKeyId=AKIAINSRFOQXTN4DT46A&Expires=1539549370&Signature=Wr5VYIs8VuH0LO5K6LpwRMdjSCg%3D" width=200><br>
 
 
+### Home page
+<img src="https://github.com/absambam/Carbon-Footprint-Calculator/blob/master/display%20images/1.png" width=200><br>
+
+
 ## References
 [Greenhouse Gas Equivalencies from the EPA](https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references)
 
