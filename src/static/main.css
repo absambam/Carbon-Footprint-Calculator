@@ -18,10 +18,12 @@ h1 {
   color: white;
 }
 
-
-.logo {
+img {
   width: 25%;
   height: 25%;
+}
+
+.logo {
   margin: 0 auto;
 }
 
