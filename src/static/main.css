@@ -58,3 +58,20 @@ img {
   background-color: rgba(255,255,255,0.3);
   cursor: pointer;
 }
+
+.about {
+  background-color: white;
+  padding: 320px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+h2 {
+  color: black;
+}
+
+h3 {
+  color: black;
+  font-size: 30px;
+}
