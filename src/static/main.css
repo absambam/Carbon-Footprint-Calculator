@@ -2,7 +2,6 @@
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
   color: black;
-  margin-top: 100px;
 }
 
 html, body {
@@ -14,13 +13,20 @@ html, body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 70px;
   color: white;
+  margin-top: 100px;
 }
 
 img {
+  display: block;
   width: 25%;
   height: 25%;
+  max-width: 300px;
+  min-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .logo {
@@ -28,15 +34,19 @@ img {
 }
 
 .rounded {
-  border-radius: 25px;
+  display: block;
+  border-radius: 100px;
   background-color: white;
   margin: 0 auto;
+  margin-top: 75px;
   width: 200px;
   height: 60px;
 }
 
 .rounded a {
-  margin-top: 25px;
+  margin: 0 auto;
+  display: block;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
 }
