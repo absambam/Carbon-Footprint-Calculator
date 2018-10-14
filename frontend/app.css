@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Arial', serif;
 }
 
 html, body {
@@ -8,6 +8,10 @@ html, body {
   height: 100%;
   margin: 0;
   //background-image: linear-gradient(to bottom right, #B4D836, #73B349);
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .ribbon {
@@ -22,4 +26,21 @@ html, body {
   text-align: center;
   margin: 0;
   color: white;
+}
+
+form input {
+  font-size: 1.3em;
+  margin: 0.3rem;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: mediumseagreen;
+}
+
+form input:focus {
+  border-radius: 5px;
+  outline: 0;
+}
+
+input[type="submit"] {
+  border: none;
 }
