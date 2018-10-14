@@ -1,15 +1,13 @@
-* {
-  margin: 0;
-  font-family: 'Arial', serif;
-}
-
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+  margin: 0;
+  font-family: 'Work Sans', serif;
 }
 
 h1 {
+  margin: 0;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -38,4 +36,24 @@ h1 {
 
 #small-description {
   font-size:1rem;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.calculation {
+  display: block;
+
+}
+
+.value {
+  display: block;
+
+}
+
+.value-type {
+  display: block;
+
 }
