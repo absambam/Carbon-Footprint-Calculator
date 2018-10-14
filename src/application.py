@@ -21,6 +21,7 @@ def calc():
 
 @app.route("/")
 def start():
+    url_for('static', filename='app.css')
     return render_template('app.html')
 
 app.run()
