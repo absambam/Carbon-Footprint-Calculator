@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 80px;
+  font-size: 40px;
   color: black;
   margin-top: 100px;
 }
@@ -14,6 +14,7 @@ html, body {
 }
 
 h1 {
+  font-size: 80px;
   color: white;
 }
 
@@ -22,13 +23,18 @@ h1 {
   width: 25%;
   height: 25%;
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 .rounded {
   border-radius: 25px;
   background-color: white;
-
+  margin: 0 auto;
   width: 200px;
   height: 60px;
+}
+
+.rounded a {
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
 }
