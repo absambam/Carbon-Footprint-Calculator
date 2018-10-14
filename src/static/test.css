@@ -29,6 +29,8 @@ h1 {
   height: calc(100% - 1.3rem);
   background-color: mediumseagreen;
   font-size: 5rem;
+  padding-top: 10%;
+  overflow: auto;
 }
 
 .parenthesis {
@@ -66,8 +68,9 @@ img {
   border: 2px solid mediumseagreen;
   background-color: white;
   border-radius: 5px;
-  width: 70%;
-  height: 50%;
+  width: 50%;
+  max-width:780px;
+  height: 70%;
   vertical-align: middle;
   margin: 0 auto;
   text-align: center;
