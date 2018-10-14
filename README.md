@@ -9,8 +9,19 @@ Gif created with [Recordit](http://recordit.co/) <br />
 <img src="https://s3.amazonaws.com/img0.recordit.co/4FLuMH8LGr.mp4?AWSAccessKeyId=AKIAINSRFOQXTN4DT46A&Expires=1539549370&Signature=Wr5VYIs8VuH0LO5K6LpwRMdjSCg%3D" width=200><br>
 
 
+## Images from the Carbon Footprint Calculator
+
 ### Home page
-<img src="https://github.com/absambam/Carbon-Footprint-Calculator/blob/master/display%20images/1.png" width=200><br>
+<img src="https://github.com/absambam/Carbon-Footprint-Calculator/blob/master/display%20images/1.png" width=500><br>
+### About page
+<img src="https://github.com/absambam/Carbon-Footprint-Calculator/blob/master/display%20images/2.png" width=500><br>
+### Carbon Footprint Calculator
+<img src="https://github.com/absambam/Carbon-Footprint-Calculator/blob/master/display%20images/3.png" width=500><br>
+### Results page
+<img src="https://github.com/absambam/Carbon-Footprint-Calculator/blob/master/display%20images/4.png" width=500><br>
+### Anaylsis page
+<img src="https://github.com/absambam/Carbon-Footprint-Calculator/blob/master/display%20images/5.png" width=500><br>
+
 
 
 ## References
