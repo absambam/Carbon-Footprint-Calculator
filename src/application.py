@@ -28,19 +28,22 @@ def calc():
         if request.form['starting-point'] != None and request.form['destination'] != None and request.form['mpg'] != '0':
 
             # get the distance from the starting point to destination
-            dist = distance.getDistance(request.form['starting-point'], request.form['destination'])
+            info = distance.getDistance(request.form['starting-point'], request.form['destination'])
             # make sure a valid distance was given before running calculations
-            if dist == -1:
+            if info[2] == -1:
                 return render_template('app.html', error=error)
 
+            base_url = 'https://www.google.com/maps/dir/'
+            url = base_url + info[0] + '/' + info[1]
+            
             # calculate the necessary variables
-            emission = emission_calc.calcFootprint(request.form['mpg'], dist)
+            emission = emission_calc.calcFootprint(request.form['mpg'], info[2])
             yearTravels = emission_calc.numTravelsInYear(emission)
             trees = emission_calc.numTrees(emission)
             homes = emission_calc.numPerHomePerYear(emission)
 
             # store the calculated data in a tuple and return it to the end html file
-            data = (emission, homes, trees, yearTravels)
+            data = (emission, homes, trees, yearTravels, url)
             return render_template('test.html', data=data)
 
     # return error if there was an issue with any of the inputted values

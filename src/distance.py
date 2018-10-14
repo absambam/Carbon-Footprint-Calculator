@@ -5,10 +5,6 @@ import time
 import extract_number
 
 def getDistance(startLoc, endLoc):
-    # Check if locations are the same
-    if startLoc == endLoc:
-        return -1
-
     maps_key = 'AIzaSyBaDoxmA0conei-WUGZHS6moh7o_YphxCQ'
     base_url = 'https://maps.googleapis.com/maps/api/distancematrix/json'
 
@@ -17,8 +13,10 @@ def getDistance(startLoc, endLoc):
     # Seattle&destinations=San+Francisco&key=INSERT_API_KEY
 
     # Process strings with spaces by replacing spaces with +
-    startLoc.replace(" ", "+")
-    endLoc.replace(" ", "+")
+    startLoc = startLoc.replace(" ", "+")
+    endLoc = endLoc.replace(" ", "+")
+
+    info = [startLoc, endLoc, 0]
 
     url = base_url + '?' + urllib.urlencode({
         'units' : 'imperial',
@@ -42,23 +40,25 @@ def getDistance(startLoc, endLoc):
             if result['status']  == 'OK':
                 # Get distance value
                 print(result['rows'][0]['elements'])
-                dist = extract_number.extract_number(result['rows'][0]['elements'][0]['distance']['text'])
+                info[2] = extract_number.extract_number(result['rows'][0]['elements'][0]['distance']['text'])
                 # dist = result['rows'][0]['elements'][0]['distance']['text']
 
                 # Check if there is no distance
-                if dist == 0:
-                    return -1
+                if info[2] == 0:
+                    info[2] = -1
 
-                return dist
+                return info
             elif result['status'] != 'UNKNOWN_ERROR':
                 # Error cannot be fixed by retrying
                 raise Exception(result['error_message'])
-                return -1
+                info[2] = -1
+                return info[2]
 
         # Check if current retry delay has exceeded max retry delay
         if current_delay > max_delay:
             raise Exception('Too many retry attempts. :(')
-            return -1
+            info[2] = -1
+            return info[2]
         print('Waiting', current_delay, 'seconds before retrying...')
         time.sleep(current_delay)
         current_delay *= 2 # Increase delay each time we need to retry
