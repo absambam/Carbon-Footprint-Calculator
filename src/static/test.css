@@ -29,7 +29,7 @@ h1 {
   height: calc(100% - 1.3rem);
   background-color: mediumseagreen;
   font-size: 5rem;
-  padding-top: 10%;
+  padding-top: 5%;
   overflow: auto;
 }
 
