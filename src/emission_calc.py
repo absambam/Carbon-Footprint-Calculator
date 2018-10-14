@@ -17,9 +17,11 @@ def numTravelsInMonth(emission):
     return travels
 
 def numPerHomePerYear(emission):
+    # comparison with household carbon consumption per year
     houses = int((9.26*2205) / int(float(emission)))
     return houses
 
 def numTrees(emission):
+    # comparison with carbon absorption rate of trees
     trees = int(int(float(emission)) / 0.039 * 2205)
     return trees
