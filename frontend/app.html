@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carbon Footprint Calculator</title>
     <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans|5000" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   </head>
 
   <body>
@@ -11,13 +11,11 @@
       <h1>Carbon Footprint Calculator</h1>
     </div>
     <!--Get starting point-->
-    <form action='../backend/distance.py' method='calculateFootprint'>
+    <form action='../backend/application.py' method='calcFootprint'>
            <input type="text" name="starting-point" placeholder="Starting Point">
            <input type="text" name="destination" placeholder="Destination">
-    </form>
-     <form action='../backend/emission_calc.py' method='calculateFootprint'>
             <label for="mpg">Enter Your Vehicle's MPG</label>
-            <input id="mpg" type="number" name="mpg" value="0" />
+            <input id="mpg" name="mpg" value="0" placeholder="MPG" />
             <input type="submit">
       </form>
   </body>
