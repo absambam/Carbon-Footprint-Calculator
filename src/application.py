@@ -26,10 +26,10 @@ def calc():
             if float(dist) == -1:
                 return render_template('app.html', error=error)
             emission = emission_calc.calcFootprint(request.form['mpg'], dist)
-            monthTravels = emission_calc.numTravelsInMonth(emission)
+            # monthTravels = emission_calc.numTravelsInMonth(emission)
             yearTravels = emission_calc.numTravelsInYear(emission)
 
-            data = (dist, emission, monthTravels, yearTravels)
+            data = (dist, emission, yearTravels)
             return render_template('test.html', data=data)
     return render_template('app.html', error=error)
 
