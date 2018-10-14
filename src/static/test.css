@@ -29,6 +29,7 @@ h1 {
 
 #emissions {
   height: calc(100% - 1.3rem);
+  background-color: mediumseagreen;
   font-size: 5rem;
 }
 
@@ -38,4 +39,14 @@ h1 {
 
 #small-description {
   font-size:1rem;
+}
+
+#info-wrapper {
+  border: 2px solid mediumseagreen;
+  background-color: white;
+  border-radius: 5px;
+  width: 70%;
+  height: 50%;
+  vertical-align: middle;
+  margin: 0 auto;
 }
