@@ -1,11 +1,12 @@
 from flask import Flask
 from flask import request
+from flask import render_template
 import distance
 import emission_calc
 
 app = Flask(__name__)
 
-@app.route("/calculator", methods=['POST', 'GET'])
+@app.route("/calculate", methods=['POST', 'GET'])
 def calc():
     if request.method == 'POST':
         if request.form['starting-point'] != None and request.form['destination'] != None and request.form['mpg'] != None:
@@ -18,9 +19,9 @@ def calc():
             return data
 
 
-@app.route("/hello")
-def helo():
-    return "hello me"
+@app.route("/")
+def start():
+    return render_template('app.html')
 
 app.run()
 #starting-point, destination, mpg
