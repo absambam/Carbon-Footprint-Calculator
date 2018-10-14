@@ -29,7 +29,6 @@ h1 {
   height: calc(100% - 1.3rem);
   background-color: mediumseagreen;
   font-size: 5rem;
-  padding-top: 10%;
 }
 
 .parenthesis {
@@ -42,7 +41,7 @@ h1 {
 
 img {
   display: block;
-  height: 200px;
+  height: 400px;
   width: 200px;
   margin: 0 auto;
 }
@@ -55,20 +54,20 @@ img {
 .value {
   display: block;
   font-size: 100px;
-
+  text-align: center;
 }
 
 .value-type {
   display: block;
+  text-align: center;
 }
 
 #info-wrapper {
   border: 2px solid mediumseagreen;
   background-color: white;
   border-radius: 5px;
-  width: 50%;
-  max-width: 700px;
-  height: 70%;
+  width: 70%;
+  height: 50%;
   vertical-align: middle;
   margin: 0 auto;
 }
