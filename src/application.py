@@ -8,6 +8,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def start():
+    url_for('static', filename='main.css')
+    return render_template('index.html')
+
+@app.route("/app.html")
+def lookup():
     url_for('static', filename='app.css')
     return render_template('app.html')
 
