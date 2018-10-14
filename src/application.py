@@ -22,12 +22,15 @@ def calc():
     if request.method == 'POST':
         if request.form['starting-point'] != None and request.form['destination'] != None and request.form['mpg'] != '0':
             dist = distance.getDistance(request.form['starting-point'], request.form['destination'])
+            print (dist)
+            if float(dist) == -1:
+                return render_template('app.html', error=error)
             emission = emission_calc.calcFootprint(request.form['mpg'], dist)
             monthTravels = emission_calc.numTravelsInMonth(emission)
             yearTravels = emission_calc.numTravelsInYear(emission)
 
             data = (dist, emission, monthTravels, yearTravels)
             return render_template('test.html', data=data)
-    return render_template('test.html') # fix later
+    return render_template('app.html', error=error)
 
 app.run()
