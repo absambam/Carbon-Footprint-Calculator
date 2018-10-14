@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  font-family: 'Arial', serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.ribbon {
+  background-color: black;
+  height: fit-content;
+  width: 100%;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.ribbon h1 {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+#emissions {
+  height: calc(100% - 1.3rem);
+  font-size: 5rem;
+}
+
+.parenthesis {
+  height: 5.5rem;
+}
+
+#small-description {
+  font-size:1rem;
+}
