@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(to bottom right, #B4D836, #73B349);
+}
