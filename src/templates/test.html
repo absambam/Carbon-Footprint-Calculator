@@ -31,7 +31,7 @@
     <div id="emissions">
       <div id="info-wrapper">
         <span class="parenthesis">[</span> {{data[0]}}  <span class="parenthesis">]</span>
-        <div id="small-description">tons of CO2 emissions</div>
+        <div id="small-description">lbs of CO2 emissions</div>
         <a href={{data[4]}}>directions</a>
         <a class="btn btn-xs" id="scrolldown" href= "#analysis">Scroll down or click here for more info</a>
       </div>
@@ -47,14 +47,14 @@
       </div>
       <div class="col-md-4 calculation">
         <img src="../static/images/car.svg"/>
-        <div class="value">{{data[2]}}</div>
+        <div class="value">{{data[3]}}</div>
         <div class="value-type">
           <h3>trips would produce as much CO2 as 1 car does annually.</h3>
         </div>
       </div>
       <div class="col-md-4 calculation">
         <img src="../static/images/tree.svg"/>
-        <div class="value">{{data[3]}}</div>
+        <div class="value">{{data[2]}}</div>
         <div class="value-type">
           <h3>trees are needed to absorb the amount of CO2 produced.</h3>
         </div>

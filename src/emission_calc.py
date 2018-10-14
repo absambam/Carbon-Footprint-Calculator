@@ -23,5 +23,5 @@ def numPerHomePerYear(emission):
 
 def numTrees(emission):
     # comparison with carbon absorption rate of trees
-    trees = int(int(float(emission)) / 0.039 * 2205)
+    trees = int(int(float(emission)) / (0.039 * 2205)) + 1
     return trees
