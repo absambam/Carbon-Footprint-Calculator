@@ -28,6 +28,12 @@ h1 {
   color: white;
 }
 
+form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
 form input {
   font-size: 1.3em;
   margin: 0.3rem;
@@ -43,4 +49,9 @@ form input:focus {
 
 input[type="submit"] {
   border: none;
+}
+
+.entry-wrap label {
+  display: inline-block;
+  width: 100px;
 }

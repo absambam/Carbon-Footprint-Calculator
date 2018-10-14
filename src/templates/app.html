@@ -12,13 +12,17 @@
     </div>
     <!--Get starting point-->
     <form action='../backend/application.py' method='calcFootprint'>
-           <label for="Starting Point">MPG</label>
-           <input type="text" name="starting-point" placeholder="UC San Diego"><br>
-           <label for="mpg">MPG</label>
-           <input type="text" name="destination" placeholder="Vallartas"><br>
-            <label for="mpg">MPG</label>
-            <input id="mpg" name="mpg" value="0" placeholder="MPG" />
-            <input type="submit">
-      </form>
+        <div class="entry-wrap">
+          <label for="starting-point">Starting Point</label>
+          <input type="text" name="starting-point" placeholder="UC San Diego">
+        </div>
+        <div class="entry-wrap">
+          <label for="destination">Destination</label>
+          <input type="text" name="destination" placeholder="Vallartas"><br>
+        </div>
+      <label for="mpg">MPG</label>
+        <input id="mpg" name="mpg" value="0"><br>
+        <input type="submit">
+    </form>
   </body>
 </html>
