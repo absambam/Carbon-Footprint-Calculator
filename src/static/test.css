@@ -37,7 +37,7 @@ h1 {
 }
 
 #small-description {
-  font-size:1rem;
+  font-size: 2rem;
 }
 
 img {
@@ -71,4 +71,6 @@ img {
   height: 70%;
   vertical-align: middle;
   margin: 0 auto;
+  text-align: center;
+  padding: 5px;
 }
