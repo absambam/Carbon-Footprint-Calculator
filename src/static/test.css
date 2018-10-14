@@ -62,6 +62,7 @@ img {
 .value-type {
   display: block;
   text-align: center;
+  padding: 100px;
 }
 
 #info-wrapper {
