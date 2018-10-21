@@ -1,6 +1,5 @@
 import json
-import urllib
-import urllib2
+from urllib.request import urlopen
 import time
 import extract_number
 
