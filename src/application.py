@@ -19,7 +19,7 @@ def lookup():
     return render_template('app.html')
 
 # run through and calculate everything
-@app.route("/app", methods=['POST', 'GET'])
+@app.route("/main_app", methods=['POST', 'GET'])
 def calc():
     error=None # for error returns
     # if there's some sort of input from the website
