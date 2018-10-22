@@ -35,7 +35,7 @@ def calc():
 
             base_url = 'https://www.google.com/maps/dir/'
             url = base_url + info[0] + '/' + info[1]
-            
+
             # calculate the necessary variables
             emission = emission_calc.calcFootprint(request.form['mpg'], info[2])
             yearTravels = emission_calc.numTravelsInYear(emission)
@@ -49,4 +49,5 @@ def calc():
     # return error if there was an issue with any of the inputted values
     return render_template('app.html', error=error)
 
-app.run() # this is pretty self-explanatory...
+if __name__ == '__main__':
+    app.run() # this is pretty self-explanatory...
