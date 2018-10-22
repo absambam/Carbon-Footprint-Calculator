@@ -1,3 +1,2 @@
-[requires]
 flask
 python_version = "2.7"
